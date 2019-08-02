@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { addAuthor } from '../actions';
+import { removeAuthor } from '../actions';
+import { addBooks } from '../actions';
+import { removeBooks } from '../actions';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
 
@@ -42,4 +45,4 @@ export class AuthorInput extends Component {
   }
 };
 
-export default connect(null, { addAuthor })(AuthorInput);
+export default connect(null, { addAuthor })(AuthorInput); // another way to write a simple mapDispatch function
